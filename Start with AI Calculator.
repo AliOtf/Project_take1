@@ -1,1 +1,5 @@
-p
+print ("Hello, my name is ANANI"
+print ("Whats your name?")
+name = input ()
+print ("Nice to meet you,", name)
+print ("What can l do for you?")
