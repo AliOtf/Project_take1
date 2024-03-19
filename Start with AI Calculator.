@@ -1,5 +1,104 @@
-print ("Hello, my name is ANANI"
-print ("Whats your name?")
-name = input ()
-print ("Nice to meet you,", name)
-print ("What can l do for you?")
+print('Welcome to Shoefityou!')
+name = input('What is your name? ')
+print ('Hello, ' + name.capitalize() + '!')
+gender_ldentity ="""May you help us with identifying yourself?
+1.Man
+2.kid
+3.Women
+"""
+_ = input(gender_ldentity)
+if str(_) == '1':
+    print ("Perfect! Lets get started, to match you with your Men shoe size!")
+    height_individual = float(input("How tall are you? "))
+    print("Alright, your", float(height_individual), "foot", "tall")
+    if (height_individual) <= 5.5:
+        print("Seems as your shoe size is around 7 to 9, in men")
+    elif height_individual <= 5.9:
+        print("Your shoe size is around 9.5 to 10.5 in men")
+    elif height_individual <= 6.2:
+        print("Your shoe size is 11 to 12.5 in men")
+    elif height_individual <= 999.999:
+        print("Your shoe size is 13 to 20+ in men")
+
+elif str(_) =='2':
+    print ("Perfect, Lets get started, to match you with your kids shoe size!")
+    height_individual2 = float(input("How tall are you? "))
+    print("Alright, your", float(height_individual2), "foot", "tall")
+    if (height_individual2) <= 3:
+        print("Seems as your shoe size is around 1 to 8, in kids")
+    elif height_individual2 <= 4:
+        print("Your shoe size is around 9 to 13 in kids")
+    elif height_individual2 <= 4-5:
+        print("Your shoe size is 11 to 12.5 in kids")
+
+elif str(_) == '3':
+    print ("Perfect, Lets get started, to match you with your women shoe size!")
+    height_individual3 = float(input("How tall are you? "))
+    height_individual3 = ("Alright, your", float(height_individual3), "foot", "tall")
+    if (height_individual3) <= 5:
+        print("Seems as your shoe size is around 4 to 7, in women")
+    elif height_individual3 <= 6:
+        print("Your shoe size is around 6 to 9 in women")
+    elif height_individual3 <= 99999.9999:
+        print("Your shoe size is 8 to 12 in women")
+
+print ("Would you like to play again? yes/no")
+choice = input("")
+if choice != "yes":
+    breakpoint
+
+
+while True:
+    print('Welcome to Shoefityou!')
+    name = input('What is your name? ')
+    print('Hello, ' + name.capitalize() + '!')
+
+    gender_identity = input("""May you help us with identifying yourself?
+1. Man
+2. Kid
+3. Women
+Please enter your choice: """)
+
+    if gender_identity == '1':
+        print("Perfect! Let's get started, to match you with your Men's shoe size!")
+        height_individual = float(input("How tall are you? "))
+        print("Alright, you are", height_individual, "feet tall.")
+        if height_individual <= 5.5:
+            print("Seems like your shoe size is around 7 to 9, in men")
+        elif height_individual <= 5.9:
+            print("Your shoe size is around 9.5 to 10.5 in men")
+        elif height_individual <= 6.2:
+            print("Your shoe size is 11 to 12.5 in men")
+        else:
+            print("Your shoe size is 13 to 20+ in men")
+
+    elif gender_identity == '2':
+        print("Perfect, Let's get started, to match you with your kids' shoe size!")
+        height_individual2 = float(input("How tall are you? "))
+        print("Alright, you are", height_individual2, "feet tall.")
+        if height_individual2 <= 3:
+            print("Seems like your shoe size is around 1 to 8, in kids")
+        elif height_individual2 <= 4:
+            print("Your shoe size is around 9 to 13 in kids")
+        else:
+            print("Your shoe size is 11 to 12.5 in kids")
+
+    elif gender_identity == '3':
+        print("Perfect, Let's get started, to match you with your women's shoe size!")
+        height_individual3 = float(input("How tall are you? "))
+        print("Alright, you are", height_individual3, "feet tall.")
+        if height_individual3 <= 5:
+            print("Seems like your shoe size is around 4 to 7, in women")
+        elif height_individual3 <= 6:
+            print("Your shoe size is around 6 to 9 in women")
+        else:
+            print("Your shoe size is 8 to 12 in women")
+
+    else:
+        print("Invalid choice!")
+
+    choice = input("Would you like to play again? (yes/no): ")
+    if choice.lower() != "yes":
+        break  # Exit the loop if the player doesn't want to play again
+
+print("Thank you for playing Shoefityou!")
